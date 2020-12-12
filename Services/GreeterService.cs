@@ -26,12 +26,12 @@ namespace Barna_Valentina_Lab10
         public List<StatusInfo> StatusRepo()
         {
             List<StatusInfo> statusList = new List<StatusInfo> {
-             new StatusInfo { Author = "Randy", Description = "Task 1 in progess"},
-             new StatusInfo { Author = "John", Description = "Task 1 just started"},
-             new StatusInfo { Author = "Miriam", Description = "Finished all tasks"},
-             new StatusInfo { Author = "Petra", Description = "Task 2 finished"},
-             new StatusInfo { Author = "Steve", Description = "Task 2 in progress"}
-            };
+ new StatusInfo { Author = "Randy", Description = "Task 1 in progess"},
+ new StatusInfo { Author = "John", Description = "Task 1 just started"},
+ new StatusInfo { Author = "Miriam", Description = "Finished all tasks"},
+ new StatusInfo { Author = "Petra", Description = "Task 2 finished"},
+ new StatusInfo { Author = "Steve", Description = "Task 2 in progress"}
+ };
             return statusList;
         }
         public override async Task SendStatusSS(SRequest request, IServerStreamWriter<SResponse> responseStream, ServerCallContext context)
